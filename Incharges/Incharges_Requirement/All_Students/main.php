@@ -136,14 +136,14 @@ searchButton.addEventListener('click', () => {
                         <td> <?php echo $row["Branch"] ?> </td>
                         <td> <?php echo $row["Section"] ?> </td>
                         <td> <?php echo $row["Year_of_grad"] ?> </td>
-                        <td> <?php echo $row["HOD_status"] ?> </td>
-                        <td> <?php echo $row["fine_status"] ?> </td>
-                        <td> <?php echo $row["CC_status"] ?> </td>
-                        <td> <?php echo $row["Library_HOD_status"] ?> </td>
-                        <td> <?php echo $row["Sports_status"] ?> </td>
-                        <td> <?php echo $row["TNP_status"] ?> </td>
-                        <td> <?php echo $row["Scholarship_status"] ?> </td>
-                        <td> <?php echo $row["Accountant_status"] ?> </td>
+                        <td> <?php echo $row["HOD_status"] == 1 ? '✅' : '❌' ?> </td>
+                        <td> <?php echo $row["fine_status"] == 1 ? '✅' : '❌' ?> </td>
+                        <td> <?php echo $row["CC_status"] == 1 ? '✅' : '❌' ?> </td>
+                        <td> <?php echo $row["Library_HOD_status"] == 1 ? '✅' : '❌' ?> </td>
+                        <td> <?php echo $row["Sports_status"] == 1 ? '✅' : '❌' ?> </td>
+                        <td> <?php echo $row["TNP_status"] == 1 ? '✅' : '❌' ?> </td>
+                        <td> <?php echo $row["Scholarship_status"] == 1 ? '✅' : '❌' ?> </td>
+                        <td> <?php echo $row["Accountant_status"] == 1 ? '✅' : '❌' ?> </td>
                         <td>
                             <a href="../../../Details Page/Details.php?prn='<?php echo $row['PRN']; ?>'">
                             <button type="button" class="btn btn-outline-primary">
